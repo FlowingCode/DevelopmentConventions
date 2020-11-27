@@ -1,4 +1,4 @@
-## Flowing Code Commit Message Guidelines / v1.0.0
+## Flowing Code Commit Message Guidelines / 1.0.0-SNAPSHOT
 
 The following rules are based on the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history.
 This convention dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages.
