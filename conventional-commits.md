@@ -69,6 +69,8 @@ If possible, use the imperative, present tense, just as in the **subject**. (Thi
 ### 5. Footer
 Optional. Contains additional information about breaking changes (`BREAKING CHANGE:` footer), and it is also the place to reference GitHub issues that this commit Closes (`Closes` footer). Other footers may be provided following a convention similar to [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
 
+One or more footers may be provided one blank line after the body. Each footer must consist of a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value. Footer tokens are case-insensitive, with the exception of of `BREAKING CHANGE` (which must be uppercase).
+
 ```
 BREAKING CHANGE: <description>
 Closes #42
