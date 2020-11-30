@@ -69,13 +69,30 @@ The commit body is free-form text and may consist of any number of newline separ
 If possible, use the imperative present tense ("change" not "changed" nor "changes") and follow basic grammar rules: capitalize the first letter, end each sentence with a period, etc. This restriction can be relaxed.
 
 ### 5. Footer
-Optional. Contains additional information about breaking changes (`BREAKING CHANGE:` footer), and it is also the place to reference GitHub issues that this commit Closes (`Closes` footer). Other footers may be provided following a convention similar to [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+Optional. One or more footers may be provided one blank line after the body. Footers contains additional information about the commit, such as a description of the breaking changes, the list of issues that the commit closes, and other metadata. 
 
-One or more footers may be provided one blank line after the body. Each footer must consist of a word token, followed by either a `:<space>` or `<space>#` separator, followed by a string value. Footer tokens are case-insensitive, with the exception of of `BREAKING CHANGE` (which must be uppercase).
+Each footer consists of a word *token*, followed by either a `:<space>` or `<space>#` separator, followed by a string *value*.
 
 ```
-BREAKING CHANGE: <description>
+Token: value
+Token #value
+```
+
+The following footers are defined: 
+* `BREAKING CHANGE:` describes the breaking changes introduced by the commit. When this footer is used, the breaking change indicator `!` must be added in the header line.
+
+* `Closes #` provides a link to a single issue that is closed by the commit.
+
+* [`Co-authored-by: `](https://docs.github.com/en/free-pro-team@latest/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors) collects the name and email address for each co-author.
+
+The tokens are case-insensitive, with the exception of `BREAKING CHANGE: ` (which must be uppercase).
+Other footers may be included following the syntax given above.
+
+#### Examples
+```
+BREAKING CHANGE: description
 Closes #42
+Closes #43
+Co-authored-by: name <name@example.com>
+Co-authored-by: another-name <another-name@example.com>
 ```
-
-When the `BREAKING CHANGE:` footer is used, the breaking change indicator `!` must be added in the header line.
