@@ -64,9 +64,9 @@ A properly formed Git commit subject line should always be able to complete the 
 ### 4. Body
 Optional. Should include the motivation for the change and contrast this with previous behavior.
 
-The commit body is free-form text. It may contain URIs and links to other issues.
+The commit body is free-form text and may consist of any number of newline separated paragraphs. It may contain URIs and links to other issues.
 
-If possible, use the imperative, present tense, just as in the **subject**. (This restriction can be relaxed.)
+If possible, use the imperative present tense ("change" not "changed" nor "changes") and follow basic grammar rules: capitalize the first letter, end each sentence with a period, etc. This restriction can be relaxed.
 
 ### 5. Footer
 Optional. Contains additional information about breaking changes (`BREAKING CHANGE:` footer), and it is also the place to reference GitHub issues that this commit Closes (`Closes` footer). Other footers may be provided following a convention similar to [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
