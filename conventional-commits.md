@@ -64,6 +64,8 @@ A properly formed Git commit subject line should always be able to complete the 
 ### 4. Body
 Optional. Should include the motivation for the change and contrast this with previous behavior.
 
+The commit body is free-form text. It may contain URIs and links to other issues.
+
 If possible, use the imperative, present tense, just as in the **subject**. (This restriction can be relaxed.)
 
 ### 5. Footer
