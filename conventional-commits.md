@@ -69,7 +69,7 @@ The commit body is free-form text and may consist of any number of newline separ
 If possible, use the imperative present tense ("change" not "changed" nor "changes") and follow basic grammar rules: capitalize the first letter, end each sentence with a period, etc. This restriction can be relaxed.
 
 ### 5. Footer
-Optional. One or more footers may be provided one blank line after the body. Footers contains additional information about the commit, such as a description of the breaking changes, the list of issues that the commit closes, and other metadata. 
+Optional. One or more footers may be provided one blank line after the body. Footers contains additional information about the commit, such as a description of the breaking changes, the list of issues that the commit will close, and other metadata. 
 
 Each footer consists of a word *token*, followed by either a `:<space>` or `<space>#` separator, followed by a string *value*.
 
@@ -81,7 +81,7 @@ Token #value
 The following footers are defined: 
 * `BREAKING CHANGE:` describes the breaking changes introduced by the commit. When this footer is used, the breaking change indicator `!` must be added in the header line.
 
-* `Closes #` provides a link to a single issue that is closed by the commit.
+* `Close #` provides a link to a single issue that is closed by the commit.
 
 * [`Co-authored-by: `](https://docs.github.com/en/free-pro-team@latest/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors) collects the name and email address for each co-author.
 
@@ -91,8 +91,8 @@ Other footers may be included following the syntax given above.
 #### Examples
 ```
 BREAKING CHANGE: description
-Closes #42
-Closes #43
+Close #42
+Close #43
 Co-authored-by: name <name@example.com>
 Co-authored-by: another-name <another-name@example.com>
 ```
