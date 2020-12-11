@@ -20,8 +20,8 @@ Each commit message consists of a **header**, a **body** and a **footer**. The *
 
 ### 1. Type
 Required. Must be one of the following: 
-  - `build:` Changes that affect the build system or external dependencies (e.g.: configure plugins and dependencies in pom.xml)
-  - `ci:` Changes to our CI configuration files and scripts, with no impact in the released artifact (e.g.: set metadata and profiles in pom.xml, edit DockerFile)
+  - `build:` Changes to the build process or external dependencies affecting the exported artifacts (i.e. those artifacts that are created as a result of such process, and are utilized as final deliverables or included in other external projects). Correlates with a PATCH, MINOR or MAJOR increment in semantic versioning, depending on the nature of the change
+  - `ci:` Changes to the CI configuration, and other changes to the build process or external dependencies with no impact in the exported artifacts (e.g.: configure code quality metrics, add dependencies that are only needed for running unit tests). Does not correlate with an increment in semantic versioning, because the versioned artifacts are not modified
   - `chore:` Changes, not covered by other types
   - `docs:` Documentation only changes
   - `feat:` A new feature (correlates with MINOR in semantic versioning)
