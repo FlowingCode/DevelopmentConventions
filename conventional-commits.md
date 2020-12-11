@@ -22,7 +22,7 @@ Each commit message consists of a **header**, a **body** and a **footer**. The *
 Required. Must be one of the following: 
   - `build:` Changes that affect the build system or external dependencies (e.g.: configure plugins and dependencies in pom.xml)
   - `ci:` Changes to our CI configuration files and scripts, with no impact in the released artifact (e.g.: set metadata and profiles in pom.xml, edit DockerFile)
-  - `chore:` Maintenance changes not covered by other types.
+  - `chore:` Changes, not covered by other types
   - `docs:` Documentation only changes
   - `feat:` A new feature (correlates with MINOR in semantic versioning)
   - `fix:` A bug fix (correlates with PATCH in semantic versioning)
