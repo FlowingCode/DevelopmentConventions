@@ -1,7 +1,6 @@
 ## Flowing Code Commit Message Guidelines / 1.0.0-SNAPSHOT
 
-The following rules are based on the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history.
-This convention dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages.
+The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages.
 Some elements and definitions were taken from the [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) and [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
 
 
