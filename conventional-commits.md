@@ -3,6 +3,7 @@
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages.
 Some elements and definitions were taken from the [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) and [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
 
+These guidelines encourage logically atomic commits ([ref1](https://benmatselby.dev/post/logical-commits/), [ref2](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi)), i.e. commits that are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**. The **header** has a special format that includes a **type**, a **scope** and a **subject**. The **type** and **subject** are required, all the other parts are optional.
@@ -19,17 +20,26 @@ Each commit message consists of a **header**, a **body** and a **footer**. The *
 
 ### 1. Type
 Required. Must be one of the following: 
-  - `build:` Changes to the build process or external dependencies affecting the exported artifacts (i.e. those artifacts that are created as a result of such process, and are utilized as final deliverables or included in other external projects). Correlates with a PATCH, MINOR or MAJOR increment in semantic versioning, depending on the nature of the change
-  - `ci:` Changes to the CI configuration, and other changes to the build process or external dependencies with no impact in the exported artifacts (e.g.: configure code quality metrics, add dependencies that are only needed for running unit tests). Does not correlate with an increment in semantic versioning, because the versioned artifacts are not modified
-  - `chore:` Changes, not covered by other types
-  - `docs:` Documentation only changes
-  - `feat:` A new feature (correlates with MINOR in semantic versioning)
-  - `fix:` A bug fix (correlates with PATCH in semantic versioning)
-  - `perf:` A code change that improves performance
-  - `refactor:` A code change that neither fixes a bug nor adds a feature
-  - `revert:` Reverts a previous commit
-  - `style:` Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-  - `test:` Adding missing tests or refactoring/fixing existing tests
+  - Commits that contribute to the application source code:
+    - `feat:` A new feature (correlates with MINOR in semantic versioning)
+    - `fix:` A bug fix (correlates with PATCH in semantic versioning)
+    - `perf:` A code change that improves performance
+    - `refactor:` A code change that neither fixes a bug, nor adds a feature, nor implement a performance improvement
+  
+  - Commits that contribute to unit tests:
+    - `test:` Adding missing tests or refactoring/fixing existing tests  
+
+  - Commits that contribute to the build process and external dependencies:  
+    - `build:` Changes to the build process or external dependencies affecting the exported artifacts (i.e. those artifacts that are created as a result of such process, and are utilized as final deliverables or included in other external projects). Correlates with a PATCH, MINOR or MAJOR increment in semantic versioning, depending on the nature of the change
+    - `ci:` Changes to the CI configuration, and other changes to the build process or external dependencies with no impact in the exported artifacts (e.g.: configure code quality metrics, add dependencies that are only needed for running unit tests). Does not correlate with an increment in semantic versioning, because the versioned artifacts are not modified
+
+ - Trivial commits:
+    - `docs:` Documentation only changes 
+    - `style:` Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)    
+
+ - Other commits:
+    - `revert:` Reverts a previous commit
+    - `chore:` Changes, not covered by other types
 
 Type values are lowercase.
 
