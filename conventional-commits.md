@@ -1,9 +1,8 @@
 ## Flowing Code Commit Message Guidelines / 1.0.0-SNAPSHOT
 
-The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages.
-Some elements and definitions were taken from the [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) and [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
+The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
-These guidelines encourage logically atomic commits ([ref1](https://benmatselby.dev/post/logical-commits/), [ref2](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi)), i.e. commits that are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
+These guidelines encourage [logically atomic commits](https://benmatselby.dev/post/logical-commits/), i.e. commits that are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**. The **header** has a special format that includes a **type**, a **scope** and a **subject**. The **type** and **subject** are required, all the other parts are optional.
@@ -105,3 +104,13 @@ Close #43
 Co-authored-by: name <name@example.com>
 Co-authored-by: another-name <another-name@example.com>
 ```
+
+### References
+  - [Conventional Commits specification 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
+  - [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
+  - Ben Selby. [Logically atomic commits](https://benmatselby.dev/post/logical-commits/)
+  - Clarice Bouwer. [Why I Create Atomic Commits In Git](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi)
+    
+### Bibliography
+  - [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) (22b96b9)
+  - Chris Beams. [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
