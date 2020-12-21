@@ -119,6 +119,29 @@ revert: chore: update README.md
 Revert commit b3befad91a6e39288ea53d540a4a483b0898fb49.
 ```
 
+### FAQ
+
+#### What type to use for visual content changes?
+
+Use the appropriate type, depending on the nature of the change. For instance: changes to Cascading Style Sheets contribute to the application source code (`fix`, `refactor`, etc.) and changes to static resources do not contribute to the application code, and are not covered by other types (`chore`). Note that the `style` type addresses changes that do not affect the meaning of the code (such as formatting).
+  
+```
+fix: fix overlapping problem in divs
+refactor: use css variables instead of hardcoded values
+chore: replace the landing page banner
+style: format CSS style rules
+```
+
+
+#### What type to use when removing a class or method?
+
+A commit that only removes a class or method is a `refactor` (i.e. a code change that neither fixes a bug, nor adds a feature). 
+If the class or method is part of the public API, the commit introduces a BREAKING CHANGE.
+
+```
+refactor!: delete class Foo 
+```
+
 ### References
   - [Conventional Commits specification 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
   - [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
