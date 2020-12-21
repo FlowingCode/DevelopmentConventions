@@ -112,5 +112,5 @@ Co-authored-by: another-name <another-name@example.com>
   - Clarice Bouwer. [Why I Create Atomic Commits In Git](https://dev.to/cbillowes/why-i-create-atomic-commits-in-git-kfi)
     
 ### Bibliography
-  - [Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines) (22b96b9)
+  - [Angular convention](https://github.com/angular/angular/blob/88fbc06/CONTRIBUTING.md#-commit-message-guidelines) (88fbc06)
   - Chris Beams. [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
