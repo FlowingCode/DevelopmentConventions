@@ -105,6 +105,20 @@ Co-authored-by: name <name@example.com>
 Co-authored-by: another-name <another-name@example.com>
 ```
 
+### Revert commits
+
+If the commit reverts a previous commit:
+- The commit *type* must be `revert:`
+- The commit *subject* must begin with the *type* of the reverted commit, followed by the *subject* of the reverted commit.
+- The commit message should contain the SHA of the commit(s) being reverted.
+
+#### Example
+```
+revert: chore: update README.md
+
+Revert commit b3befad91a6e39288ea53d540a4a483b0898fb49.
+```
+
 ### References
   - [Conventional Commits specification 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
   - [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
