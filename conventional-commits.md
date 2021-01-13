@@ -39,6 +39,7 @@ Required. Must be one of the following:
  - Other commits:
     - `revert:` Reverts a previous commit
     - `chore:` Changes, not covered by other types
+    - `WIP:` Incomplete changes ("work in progress")
 
 Type values are lowercase.
 
@@ -117,6 +118,32 @@ If the commit reverts a previous commit:
 revert: chore: update README.md
 
 Revert commit b3befad91a6e39288ea53d540a4a483b0898fb49.
+```
+
+### WIP commits
+
+WIP commits are temporary in nature and expected to be replaced by a final logically atomic commit.
+
+In order to mark a commit as work-in-progress:
+- The commit *type* must be `WIP:` (uppercase)
+- The commit *subject* must begin with the *type* of the in-progress commit, followed by the *subject* of the in-progress commit.
+- The commit message body may describe the current status of the implementation, in addition to other information that is intended for the final commit message.
+
+#### Example
+
+An initial commit was added with a partial fix:
+```
+WIP: fix: prevent orders with negative amount of items
+
+Validation was added in the creation form. 
+Need to consider the case of editing an existing orders.
+```
+
+After the changes are complete, the commit message will be rewritten as:
+```
+fix: prevent orders with negative amount of items
+
+Add validation in the creation and edition forms.
 ```
 
 ### FAQ
