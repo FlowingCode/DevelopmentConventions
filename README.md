@@ -3,3 +3,4 @@ Repository hosting conventions, decisions and documentation related to best codi
 
 # Contents
 - [Conventional commits specification](conventional-commits.md)
+- [Code style guide](code-style.md)
