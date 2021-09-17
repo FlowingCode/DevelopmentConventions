@@ -2,7 +2,7 @@
 
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
-These guidelines encourage [logically atomic commits](https://benmatselby.dev/post/logical-commits/), i.e. commits that are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
+These guidelines encourage [logically atomic commits](https://benmatselby.dev/post/logical-commits/), i.e. commits that stand by themselves, are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**. The **header** has a special format that includes a **type**, a **scope** and a **subject**. The **type** and **subject** are required, all the other parts are optional.
@@ -39,7 +39,7 @@ Required. Must be one of the following:
  - Other commits:
     - `revert:` Reverts a previous commit
     - `chore:` Changes, not covered by other types
-    - `WIP:` Incomplete changes ("work in progress")
+    - `WIP:` Incomplete changes ("work in progress"). Note that `WIP:` commits are necessarily not atomical.
 
 Type values are lowercase.
 
