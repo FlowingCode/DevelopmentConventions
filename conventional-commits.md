@@ -24,6 +24,8 @@ Required. Must be one of the following:
     - `fix:` A bug fix (correlates with PATCH in semantic versioning)
     - `perf:` A code change that improves performance
     - `refactor:` A code change that neither fixes a bug, nor adds a feature, nor implement a performance improvement
+    - `deprecate:` Deprecating an existing feature (correlates with MINOR in semantic versioning)
+    - `remove:` Removing a feature (which is a breaking change)
   
   - Commits that contribute to unit tests:
     - `test:` Adding missing tests or refactoring/fixing existing tests  
@@ -162,11 +164,12 @@ style: format CSS style rules
 
 #### What type to use when removing a class or method?
 
-A commit that only removes a class or method is a `refactor` (i.e. a code change that neither fixes a bug, nor adds a feature). 
-If the class or method is part of the public API, the commit introduces a BREAKING CHANGE.
+If the removal takes away a feature, the commit introduces a BREAKING CHANGE and must have type `remove`.
+Otherwise, it is a `refactor`.
 
 ```
-refactor!: delete class Foo 
+remove!: remove feature Foo 
+refactor: remove class Foo
 ```
 
 ### References
