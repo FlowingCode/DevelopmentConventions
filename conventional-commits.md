@@ -172,6 +172,11 @@ remove!: remove feature Foo
 refactor: remove class Foo
 ```
 
+#### What type to use when for fixing trivial code smells
+
+Trivial changes that preserve the logic, the structure and the behavior of the code should have type `style`.
+Prefer using `refactor` for more complex changes, including those that may introduce breaking changes.
+
 ### References
   - [Conventional Commits specification 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)
   - [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)
