@@ -14,3 +14,20 @@ Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguid
 ### JavaDoc
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7)
+
+#### When to use `{@code}`
+
+In each comment, the first occurrence of an identifier that refers to a class, field, or method must be enclosed in a `{@link}` tag. Otherwise, the identifier must be wrapped in `{@code}` (or `<code>` see #39).
+
+The following identifiers must never be linked and should always be wrapped in `{@code}:`
+- The name of the type being documented, or the type where the documented method/field is located.
+- The names of the field type, method return type, and argument types.
+- Exceptions listed in the throws` clause of the documented method.
+- The names of the direct supertype and any implemented interfaces of the documented type (in a type-level comment).
+
+```
+  /**
+   * Creates a new instance of {@code FooBar}.
+   */
+  public FooBar() { ... }
+```
