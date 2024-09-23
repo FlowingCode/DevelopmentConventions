@@ -17,6 +17,8 @@ Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguid
 
 #### When to use `{@code}`
 
+Prefer `{@code}` over `<code>`, unless the code contains a closing brace (`}`).
+
 In each comment, the first occurrence of an identifier that refers to a class, field, or method must be enclosed in a `{@link}` tag. Otherwise, the identifier must be wrapped in `{@code}` (or `<code>` see #39).
 
 The following identifiers must never be linked and should always be wrapped in `{@code}:`
