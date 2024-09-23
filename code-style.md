@@ -24,6 +24,15 @@ Regarding the use of `var` (introduced in Java 10), follow the [Local Variable T
 - [Take care when using var with diamond or generic methods.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G6)
 - [Take care when using var with literals.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G7)
 
+Prefer diamond constructor invocation (introduced in Java 7) for fields and for variables without inferred types. For instance: 
+```
+Map<String,List<Integer>> map = new HashMap<>();
+```
+Instead of:
+```
+Map<String,List<Integer>> map = new HashMap<String,List<Integer>>();
+```
+
 ### JavaDoc
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7)
