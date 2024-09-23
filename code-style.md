@@ -10,3 +10,7 @@ Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguid
 * Maven: execute `mvn com.spotify.fmt:fmt-maven-plugin:format`
 
 ![image](https://user-images.githubusercontent.com/11554739/201381569-fb6afe7d-a6be-42e1-84f0-32382f0cd44b.png)
+
+### JavaDoc
+
+Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7)
