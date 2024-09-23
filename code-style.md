@@ -4,12 +4,25 @@
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
+#### Formatter
+
 * Eclipse: download the [eclipse-java-google-style](https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml) formatter. Remove the preset sorting order of import statements as shown below.
 * IntelliJ: install the google-java-format plugin. For further configuration and installations instructions refer to [this documentation](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config).
 * VSCode: use Google's Eclipse formatter as explained [here](https://code.visualstudio.com/docs/java/java-linting#_formatter).
 * Maven: execute `mvn com.spotify.fmt:fmt-maven-plugin:format`
 
 ![image](https://user-images.githubusercontent.com/11554739/201381569-fb6afe7d-a6be-42e1-84f0-32382f0cd44b.png)
+
+#### Local Variable Type Inference
+
+Regarding the use of `var` (introduced in Java 10), follow the [Local Variable Type Inference Style Guidelines](https://openjdk.org/projects/amber/guides/lvti-style-guide)
+
+- [Choose variable names that provide useful information.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G1)
+- [Minimize the scope of local variables.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G2)
+- [Consider var when the initializer provides sufficient information to the reader.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G3)
+- [Use var to break up chained or nested expressions with local variables.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G4)
+- [Take care when using var with diamond or generic methods.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G6)
+- [Take care when using var with literals.](https://openjdk.java.net/projects/amber/guides/lvti-style-guide#G7)
 
 ### JavaDoc
 
