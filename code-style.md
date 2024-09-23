@@ -1,4 +1,4 @@
-## Flowing Code Style Guide / 1.0.2
+## Flowing Code Style Guide / 1.0.3-rc1
 
 ### Java
 
