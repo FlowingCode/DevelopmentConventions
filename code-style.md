@@ -55,3 +55,20 @@ The following identifiers must never be linked and should always be wrapped in `
    */
   public FooBar() { ... }
 ```
+
+#### Deprecation
+
+To indicate deprecation use both the `@Deprecated` annotation and the `@deprecated` JavaDoc tag.
+
+The `@Deprecated` annotation allows tools to identify deprecated APIs, while the `@deprecated` 
+tag provides documentation that explains the reasons for deprecation and suggests alternatives.
+
+```
+  /** Sets the foo.
+   * @param foo the foo to be set.
+   * @deprecated Use {@code setFooBar} instead.*/
+  @Deprecated(forRemoval = true)
+  void setFoo(Object foo) {
+    // ...
+  }
+```
