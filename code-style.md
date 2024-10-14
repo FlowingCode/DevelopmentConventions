@@ -1,5 +1,7 @@
 ## Flowing Code Style Guide / 1.0.3-rc1
 
+In any file format, avoid using tab characters to replace a fixed amount of whitespace in any file format, as their display can differ across devices and platforms.
+
 ### Java
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
