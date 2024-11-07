@@ -1,4 +1,4 @@
-## Flowing Code Style Guide / 1.0.3-rc1
+## Flowing Code Style Guide / 1.0.3-rc2
 
 In any file format, avoid using tab characters to replace a fixed amount of whitespace in any file format, as their display can differ across devices and platforms.
 
@@ -33,6 +33,18 @@ Map<String,List<Integer>> map = new HashMap<>();
 Instead of:
 ```
 Map<String,List<Integer>> map = new HashMap<String,List<Integer>>();
+```
+#### Early returns
+Using early returns as guard clauses for handling preconditions is preferred because it enhances code readability by simplifying structure and flow, reducing cognitive load for readers, and allowing the main logic to proceed cleanly with more explicit error conditions. This approach also minimizes indentation and nesting, making the logic easier to follow, particularly in larger functions.
+
+Example:
+```
+public void foo(String myString) {
+   if (myString == null) {
+      return;
+   } 
+   // Do something more here...
+}
 ```
 
 ### JavaDoc
