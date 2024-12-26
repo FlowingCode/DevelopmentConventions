@@ -1,4 +1,4 @@
-## Flowing Code Commit Message Guidelines / 1.0.0-rc.5
+## Flowing Code Commit Message Guidelines / 1.0.0-rc.6
 
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
@@ -31,8 +31,8 @@ Required. Must be one of the following:
     - `test:` Adding missing tests or refactoring/fixing existing tests  
 
   - Commits that contribute to the build process and external dependencies:  
-    - `build:` Changes to the build process or external dependencies affecting the exported artifacts (i.e. those artifacts that are created as a result of such process, and are utilized as final deliverables or included in other external projects). Correlates with a PATCH, MINOR or MAJOR increment in semantic versioning, depending on the nature of the change
-    - `ci:` Changes to the CI configuration, and other changes to the build process or external dependencies with no impact in the exported artifacts (e.g.: configure code quality metrics, add dependencies that are only needed for running unit tests). Does not correlate with an increment in semantic versioning, because the versioned artifacts are not modified
+    - `build:` Changes to the build process or external dependencies that affect the exported artifacts (i.e., those artifacts created as a result of the process and utilized as final deliverables or included in other external projects) and, consequently, the applications that rely on those artifacts. Correlates with a PATCH, MINOR or MAJOR increment in semantic versioning, depending on the nature of the change.
+    - `ci:` Changes to the CI configuration and other changes to the build process or external dependencies that have no impact on the exported artifacts or the end user of the component (e.g., configuring code quality metrics, adding dependencies needed only for running unit tests, or modifying the build process in ways that do not affect the end user). Does not correlate with an increment in semantic versioning, as the versioned artifacts remain unmodified.
 
  - Trivial commits:
     - `docs:` Documentation only changes 
