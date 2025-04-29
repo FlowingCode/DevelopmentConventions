@@ -1,4 +1,4 @@
-## Flowing Code Style Guide / 1.0.3-rc2
+## Flowing Code Style Guide / 1.0.3-rc3
 
 In any file format, avoid using tab characters to replace a fixed amount of whitespace in any file format, as their display can differ across devices and platforms.
 
