@@ -51,6 +51,19 @@ public void foo(String myString) {
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7)
 
+#### Punctuation and capitalization rules for `@param` and `@return`:
+
+- Start the description with an uppercase letter only if the first phrase is a complete sentence.
+- End the description with a period only if it is a complete sentence or contains multiple sentences or phrases.
+
+Examples:
+```
+@param x  the x-coordinate, measured in pixels
+@param x  the x-coordinate. Measured in pixels.
+@param x  Specifies the x-coordinate, measured in pixels.
+@param x  Specifies the x-coordinate. Measured in pixels.
+```
+
 #### When to use `{@code}`
 
 Prefer `{@code}` over `<code>`, unless the code contains a closing brace (`}`).
