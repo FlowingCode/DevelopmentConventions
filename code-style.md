@@ -49,7 +49,7 @@ public void foo(String myString) {
 
 ### JavaDoc
 
-Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7)
+Use the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html#s7-javadoc) (Section 7) as the primary reference. For topics not addressed there or in this document, defer to Oracle's [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html).
 
 #### Punctuation and capitalization rules for `@param` and `@return`:
 
