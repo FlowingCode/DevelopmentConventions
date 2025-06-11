@@ -1,4 +1,4 @@
-## Flowing Code Commit Message Guidelines / 1.0.0-rc.6
+## Flowing Code Commit Message Guidelines / 1.0.0-rc.7
 
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
@@ -23,7 +23,7 @@ Required. Must be one of the following:
     - `feat:` A new feature (correlates with MINOR in semantic versioning)
     - `fix:` A bug fix (correlates with PATCH in semantic versioning)
     - `perf:` A code change that improves performance
-    - `refactor:` A code change that neither fixes a bug, nor adds a feature, nor implement a performance improvement
+    - `refactor:` improving internal code structure, readability, or maintainability, without adding features or fixing bugs (correlates with PATCH if non-breaking; breaking changes, e.g., renaming a public method, correlate with MAJOR).
     - `deprecate:` Deprecating an existing feature (correlates with MINOR in semantic versioning)
     - `remove:` Removing a feature (which is a breaking change)
   
