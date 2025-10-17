@@ -1,4 +1,4 @@
-## Flowing Code Commit Message Guidelines / 1.0.0-rc.7
+## Flowing Code Commit Message Guidelines / 1.0.0-rc.8
 
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
@@ -49,9 +49,7 @@ An **exclamation mark** `!` following the **type** (and **scope**, if present) i
 
 ### 2. Scope
 Optional. Provides additional contextual info. The scope (if any) is written surrounded by parenthesis. A scope name consists of a noun describing a section of the codebase.
-The granularity of scopes and their allowed values are defined on a per-project basis. 
-
-Addons projects define the scope `demo` for those changes affecting the demo source code; other changes use the unnamed scope. 
+The granularity of scopes and their allowed values are defined on a per-project basis.
 
 ### 3. Subject
 Required. A succinct description of the change:
