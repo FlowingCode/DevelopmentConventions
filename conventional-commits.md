@@ -1,8 +1,8 @@
-## Flowing Code Commit Message Guidelines / 1.0.0-rc.8
+## Flowing Code Commit Message Guidelines / 1.0.0-rc.9
 
 The following guidelines are an extension of the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), which provides an easy set of rules for creating an explicit commit history and dovetails with [SemVer](https://semver.org/spec/v2.0.0.html) by describing the features, fixes, and breaking changes made in commit messages. 
 
-These guidelines encourage [logically atomic commits](https://benmatselby.dev/post/logical-commits/), i.e. commits that stand by themselves, are big enough to add value to the project, and small enough to read, review and revert. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
+These guidelines encourage [logically atomic commits](https://benmatselby.dev/post/logical-commits/), i.e. commits that stand by themselves, are big enough to add value to the project, and small enough to read and review. Each commit should represent exactly one logical change and be independently revertable without unintended side effects. Avoid bundling unrelated changes into one commit. There is no hard and fast rule for determining what adds value to the project, or what is small enough: use common sense.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**. The **header** has a special format that includes a **type**, a **scope** and a **subject**. The **type** and **subject** are required, all the other parts are optional.
