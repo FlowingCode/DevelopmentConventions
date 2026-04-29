@@ -76,11 +76,17 @@ The following identifiers must never be linked and should always be wrapped in `
 - Exceptions listed in the throws` clause of the documented method.
 - The names of the direct supertype and any implemented interfaces of the documented type (in a type-level comment).
 
+The restriction about which identifiers must never be linked applies only to the type identifier itself. `{@link}` must still be used for the first reference to specific methods or fields belonging to those restricted types.
+
 ```
   /**
-   * Creates a new instance of {@code FooBar}.
+   * Wraps a {@code Bar} into a new {@code Foo} container.
+   * <p>The internal name is derived via {@link Bar#getName()}. 
+   * If {@code Bar#getName()} returns {@code null}, then the internal name is randomized.
+   *
+   * @param bar the {@code Bar} instance to be wrapped
    */
-  public FooBar() { ... }
+  public Foo(Bar bar) { ... }
 ```
 
 #### Deprecation
