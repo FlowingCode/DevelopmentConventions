@@ -1,4 +1,4 @@
-# Flowing Code Style Guide / 1.0.4
+# Flowing Code Style Guide / 1.0.5
 
 In any file format, maintain a consistent style for indentation and alignment throughout the entire file. Do not use tab characters on some lines and a fixed amount of whitespace on others, as their display can differ across devices and platforms.
 
@@ -68,7 +68,7 @@ Examples:
 
 Prefer `{@code}` over `<code>`, unless the code contains a closing brace (`}`).
 
-In each comment, the first occurrence of an identifier that refers to a class, field, or method must be enclosed in a `{@link}` tag. Otherwise, the identifier must be wrapped in `{@code}` (or `<code>` see #39).
+In each comment, the first occurrence of an identifier that refers to a class, field, or method must be enclosed in a `{@link}` tag. Otherwise, the identifier must be wrapped in `{@code}` (or `<code>` see #39). Each Javadoc comment is treated as a unique scope for this rule.
 
 The following identifiers must never be linked and should always be wrapped in `{@code}:`
 - The name of the type being documented, or the type where the documented method/field is located.
