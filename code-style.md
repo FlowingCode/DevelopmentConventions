@@ -1,4 +1,4 @@
-# Flowing Code Style Guide / 1.0.5
+# Flowing Code Style Guide / 1.0.6
 
 In any file format, maintain a consistent style for indentation and alignment throughout the entire file. Do not use tab characters on some lines and a fixed amount of whitespace on others, as their display can differ across devices and platforms.
 
