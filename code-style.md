@@ -74,7 +74,7 @@ The following identifiers must never be linked and should always be wrapped in `
 - The name of the type being documented, or the type where the documented method/field is located.
 - The names of the field type, method return type, and argument types.
 - Exceptions listed in the `throws` clause of the documented method.
-- The names of the direct supertype and any implemented interfaces of the documented type (in a type-level comment).
+- The names of any superclass or superinterface of the documented type (in a type-level comment).
 
 The restriction about which identifiers must never be linked applies only to the type identifier itself. `{@link}` must still be used for the first reference to specific methods or fields belonging to those restricted types.
 
