@@ -2,6 +2,8 @@
 
 In any file format, maintain a consistent style for indentation and alignment throughout the entire file. Do not use tab characters on some lines and a fixed amount of whitespace on others, as their display can differ across devices and platforms.
 
+Do not leave trailing whitespace (spaces or tabs) at the end of a line. A blank line must either be truly empty, containing zero characters, or be indented exactly like the line immediately above or below it.
+
 ### Java
 
 Apply the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
