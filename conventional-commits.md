@@ -47,7 +47,7 @@ Type values are lowercase.
 
 Additional types may be defined on a per-project basis when the change is semantically distinct from all built-in types and that distinction is meaningful enough to warrant a dedicated label in the project's history. Custom types must be documented in the project's contributing guide, including their intended meaning and the semantic versioning increment they correlate with (if any).
 
-An **exclamation mark** `!` following the **type** (and **scope**, if present) indicates a breaking change (correlating with MAJOR in semantic versioning). A breaking change can be part of commits of any type. Additional details on the breaking change, if needed, can be provided in the footer section.
+An **exclamation mark** `!` following the **type** (and **scope**, if present) indicates a breaking change (correlating with MAJOR in semantic versioning). A breaking change can be part of commits of any type, except `deprecate:`, `test:`, `ci:`, `style:` and `docs:`, which are not allowed to include breaking changes. Additional details on the breaking change, if needed, can be provided in the footer section.
 
 ### 2. Scope
 Optional. Provides additional contextual info. The scope (if any) is written surrounded by parenthesis. A scope name consists of a noun describing a section of the codebase.
