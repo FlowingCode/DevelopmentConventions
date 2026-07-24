@@ -18,7 +18,7 @@ Each commit message consists of a **header**, a **body** and a **footer**. The *
 (Commits by the maven-release-plugin are excluded from these guidelines.)
 
 ### 1. Type
-Required. Must be one of the following: 
+Required. The following types are defined. Additional types may be introduced on a per-project basis:
   - Commits that contribute to the application source code:
     - `feat:` A new feature (correlates with MINOR in semantic versioning)
     - `fix:` A bug fix (correlates with PATCH in semantic versioning)
@@ -44,6 +44,8 @@ Required. Must be one of the following:
     - `WIP:` Incomplete changes ("work in progress"). Note that `WIP:` commits are necessarily not atomical.
 
 Type values are lowercase.
+
+Additional types may be defined on a per-project basis when the change is semantically distinct from all built-in types and that distinction is meaningful enough to warrant a dedicated label in the project's history. Custom types must be documented in the project's contributing guide, including their intended meaning and the semantic versioning increment they correlate with (if any).
 
 An **exclamation mark** `!` following the **type** (and **scope**, if present) indicates a breaking change (correlating with MAJOR in semantic versioning). A breaking change can be part of commits of any type. Additional details on the breaking change, if needed, can be provided in the footer section.
 
