@@ -59,7 +59,7 @@ Required. A succinct description of the change:
 * use the imperative, present tense: "change" not "changed" nor "changes"
 * don't capitalize the first letter
 * no dot (.) at the end
-* the length of the header line (including type and scope) must be less than 72 characters.
+* the length of the header line (including type and scope) must be less than 72 characters. For `revert:` commits, the header line may be up to 80 characters, to allow room for the full original header to be included without truncation.
 
 A properly formed Git commit subject line should always be able to complete the following sentence:<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;If applied, this commit will _subject_
