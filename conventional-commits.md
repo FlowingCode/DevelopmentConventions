@@ -41,7 +41,7 @@ Required. The following types are defined. Additional types may be introduced on
  - Other commits:
     - `revert:` Reverts a previous commit
     - `chore:` Changes, not covered by other types
-    - `WIP:` Incomplete changes ("work in progress"). Note that `WIP:` commits are necessarily not atomical.
+    - `WIP:` Incomplete or incremental changes on top of other commits ("work in progress"). Note that `WIP:` commits are necessarily not atomical.
 
 Type values are lowercase.
 
@@ -124,18 +124,18 @@ Revert commit b3befad91a6e39288ea53d540a4a483b0898fb49.
 
 ### WIP commits
 
-WIP commits are temporary in nature and expected to be replaced by a final logically atomic commit.
+WIP commits are temporary in nature and expected to be replaced by one or more final logically atomic commits.
 
 In order to mark a commit as work-in-progress:
 - The commit *type* must be `WIP:` (uppercase)
-- The commit *subject* must begin with the *type* of the in-progress commit, followed by the *subject* of the in-progress commit.
+- The commit *subject* must describe the change introduced by the commit.
 - The commit message body may describe the current status of the implementation, in addition to other information that is intended for the final commit message.
 
 #### Example
 
 An initial commit was added with a partial fix:
 ```
-WIP: fix: prevent orders with negative amount of items
+WIP: prevent orders with negative amount of items
 
 Validation was added in the creation form. 
 Need to consider the case of editing an existing orders.
