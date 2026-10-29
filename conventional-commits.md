@@ -15,6 +15,8 @@ Each commit message consists of a **header**, a **body** and a **footer**. The *
 [optional footer(s)]
 ```
 
+The commit message must not contain words starting with `@`. Identifiers that start with `@` must be written without it.
+
 (Commits by the maven-release-plugin are excluded from these guidelines.)
 
 ### 1. Type
